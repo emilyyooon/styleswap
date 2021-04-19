@@ -1,0 +1,129 @@
+@font-face {
+    font-family: Nostrav1sett;
+    src: url("fonts/Nostrav1.0-SettTrial.woff") format("opentype");
+}
+@font-face {
+    font-family: Nostrav1stream;
+    font-weight: lighter;
+    src: url("fonts/Nostrav1.0-StreamTrial.woff") format("opentype");
+}
+
+
+body {
+    background-color: black;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+.marquee {
+    color: #00EF16;
+    width: 100vw;
+    max-width: 100%;
+    height: 200px;
+    position: sticky;
+    overflow-x: hidden;
+}
+.track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 10s linear infinite;
+}
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.style {
+    font-family: Nostrav1sett;
+    font-size: 15rem;
+}
+.swap {
+    font-family: Nostrav1stream;
+    font-size: 16rem;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 2rem;
+    width: 100%;
+    text-align: center;
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+a:link {
+    color:#00EF16;
+    text-decoration: none;
+}
+a:visited {
+    color:#00EF16;
+    text-decoration: none;
+}
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.hanger {
+    overflow-x: hidden;
+    height: 100rem;
+    width: auto;
+    margin-top: -55rem;
+    margin-left: -20rem;
+}
+.quote {
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-style: normal;
+    font-size: 5rem;
+    color: #00EF16;
+    margin-top: 30rem;
+    text-align: center;
+}
+.pic {
+    width: 100%;
+    height: auto;
+    padding-top: 10rem;
+    transform: rotate(-40deg) scale(1.7);
+}
+
+.box {
+    background-color: white;
+    color: black;
+    margin-top: 40rem;
+    width: auto;
+    height: auto;
+    padding-top: 20rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+}
+.bold {
+    font-family: Nostrav1sett;
+    font-size: 7rem;
+    margin-left: 15rem;
+}
+.thin {
+    font-family: Nostrav1stream;
+    font-size: 7rem;
+}
+p {
+    padding: 3rem;
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-style: normal;
+    font-size: 3rem;
+    margin-left: 12rem;
+    margin-right: 12rem;
+}
+
+.umph {
+    color: #00EF16;
+}
